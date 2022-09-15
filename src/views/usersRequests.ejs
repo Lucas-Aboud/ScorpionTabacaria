@@ -1,0 +1,43 @@
+<%- include('./partials/head')%>
+<link rel="stylesheet" href="/css/usersRequests.css">
+
+<body>
+  <%- include('partials/header-navbar') %>
+  <main>
+
+    <%- include('partials/userAccount') %>
+    <h2>Pedidos</h2>
+    <div class="line"></div>
+    </div>
+    </div>
+
+    <div class="requests-container">
+
+      <div class="requests">
+        <% orders.map((order) => { %>
+        <div class="requests-user">
+          <h5>Pedido nº <%= order.id %></h5>
+
+          <button id="see-more" type="button"><i class="fa-solid fa-caret-down"></i> Ver detalhes</button>
+        </div>
+      </div>
+      <div class="requests-status">
+        <h5>Status <h6><%= order.orderStatus%></h6>
+        </h5>
+        <br />
+        <h5>Total: <h6>R$ <%= order.total%>,00</h6>
+        </h5>
+      </div>
+      <% }) %>
+    </div>
+    </article>
+    </section>
+  </main>
+  <%- include('partials/footer') %>
+</body>
+
+</html>
+</main>
+</body>
+
+</html>

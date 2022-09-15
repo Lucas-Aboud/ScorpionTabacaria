@@ -1,0 +1,44 @@
+<%- include('./partials/head')%>
+<link rel="stylesheet" href="/css/details.css">
+
+<body>
+    <%- include('partials/header-navbar') %>
+    <nav>
+        <a href="/categoria">
+            <i class="fa-solid fa-circle-arrow-left "></i>
+            Voltar
+        </a>
+    </nav>
+
+
+    <h1><%= products.name %></h1>
+
+    <div class="container-detalhe">
+
+        <div class="left">
+            <h3>Descrição</h3> <br>
+            <p><%= products.description %></p><br>
+            <h3>Especificação</h3><br>
+            <p><%= products.specification %></p><br>
+            <h3>Marca</h3>
+            <p><%= products.brand %></p>
+
+        </div>
+
+        <div class="rigth">
+            <img src="<%= products.image_path %>" alt="Produto">
+
+            <p>Preço: R$ <%= products.price %></p>
+            <br>
+            <p>Em até 12x de R$ 00,00</p>
+
+            <button>COMPRAR AGORA</button>
+
+        </div>
+
+
+    </div>
+    <%- include('partials/footer') %>
+</body>
+
+</html>

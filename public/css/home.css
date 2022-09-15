@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+
+.banner-swipe{
+  width: 90%;
+  height: 300px;
+  margin-top: 26px;
+}
+/* .swiper-slide {
+  width: 90%;
+  height: 300px;
+  margin-top: 26px;
+} */
+
+/* zsection img {
+  width: 100%;
+} */
+
+.carrossel {
+  margin-top: 26px;
+  margin-bottom: 100px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 400px;
+  justify-content: center;
+  overflow: hidden;
+  background-size: cover;
+  padding: 25px;
+}
+
+.carrossel img {
+  width: 100%;
+  height: 400px;
+}
+
+.produtinho-wrapper {
+ width: 120%;
+ display: flex;
+ justify-content: space-around;
+ column-gap: 25px;
+
+}
+.produtinho-wrapper img {
+  width: 60%;
+}
+
+
+.produto {
+  width: 90%;
+  height: 300px;
+  margin-top: 70px;
+  margin-bottom: 100px;
+}
+
+.produto img {
+  height: 150px;
+  width: 150px;
+}
+
+.produtinho {
+  justify-content: space-around;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.botao {
+  width: 115px;
+  height: 30px;
+  border-radius: 15px;
+  background-color: green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.botao a {
+  text-decoration: none;
+  color: white;
+}
+
+
+.promocoes {
+  display: flex;
+  justify-content: center;
+  background-color: #000000;
+  padding: 50px;
+
+}
+
+@media (max-width: 768px) {
+  .promocoes {
+    display: none;
+  }
+}
+
+section #quadradopromocoes {
+  display: flex;
+  gap: 20px;
+}
+
+section #imagens-direita {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-content: space-around;
+  justify-content: center;
+}
+
+@media (max-width: 1327px) {
+  section #imagens-direita img {
+    display: none;
+  }
+}
+
+section #mobile-promo {
+  display: flex;
+  justify-content: space-around;
+}
+
+@media (min-width: 769px) {
+  section #mobile-promo {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  section #mobile1 {
+    display: none;
+  }
+}
+
+
+section .topicos {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+#filtros {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 70px;
+}
+
+.nossas-marcas{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.swiper-marcasimg{
+  max-height: 100px;
+  margin-bottom: 100px;
+}
+
